@@ -67,4 +67,6 @@
   footer {
     position: fixed;
     bottom:0;
+    background-color:#b6d2ee;
+    width: 100%;
 }
