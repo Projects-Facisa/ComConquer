@@ -14,10 +14,70 @@
 }
 html,
 body {
-  height: 100% !important;
   line-height: 1;
   background-color: var(--primary-color);
+  min-height: 100vh;
+  position: relative;
+  padding-top: 60px; 
 }
+
+.course-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.course-plan {
+  flex: 1;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: black solid 3px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 100px;
+  
+}
+
+.course-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.course-price {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.course-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.course-features li {
+  margin-bottom: 20px;
+}
+
+.course-button {
+  padding: 10px;
+  background-color: #ff6600;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+}
+
+@media (max-width: 1250px) {
+  .course-container {
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
 
 #nav {
   position: fixed;
@@ -73,24 +133,6 @@ h1 {
   margin-bottom: 1em;
 }
 
-.videos {
-  list-style-type: none;
-  display: none;
-}
-
-footer {
-  position: relative;
-  bottom: 0;
-  background-color: var(--quartenary-color);
-  color: white;
-  width: 100%;
-  padding: 0.2rem;
-}
-
-.page-container {
-  min-height: calc(100vh - 43px);
-}
-
 #contact-container {
   display: flex;
   justify-content: center;
@@ -139,4 +181,76 @@ footer {
 #msgBtn:hover {
   background-color: white;
   color: var(--quartenary-color);
+}
+.footer {
+  background-color: var(--quartenary-color);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.content {
+  padding-bottom: 60px; /* Ajuste conforme a altura do footer */
+}
+
+.contact-info {
+  margin-top: 10px;
+}
+
+.contact-info img {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.contact-info a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+#videos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#videos button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+#videos button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para o iframe do vídeo */
+#video-player {
+  display: none; /* Oculta o vídeo por padrão */
+}
+
+/* Estilos para o link "Voltar" */
+#videos a {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+#videos a:hover {
+  color: #0056b3;
 }
