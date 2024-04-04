@@ -119,11 +119,9 @@ footer {
 
 #msgBtn {
   padding: 5px;
-  background-color: var(
-    --quartenary-color
-  ); /* Corresponde à cor de fundo da #contact-content */
-  color: white; /* Cor do texto */
-  border: 2px solid white; /* Adiciona a borda branca */
+  background-color: var(--quartenary-color);
+  color: white;
+  border: 2px solid white;
 }
 
 .border10px {
@@ -131,14 +129,14 @@ footer {
 }
 
 #textarea {
-  height: 100%
+  height: 100%;
 }
 
 #nome {
-  height: 100px
+  height: 100px;
 }
 
 #msgBtn:hover {
-  background-color: white; /* Cor de fundo ao passar o mouse */
-  color: var(--quartenary-color); /* Cor do texto ao passar o mouse */
+  background-color: white;
+  color: var(--quartenary-color);
 }
