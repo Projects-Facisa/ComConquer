@@ -3,6 +3,5 @@ function showModule(moduleNumber) {
     for (var i = 0; i < modules.length; i++) {
         modules[i].style.display = 'none';
     }
-    document.getElementById('module' + moduleNumber).style.display = 'block';
-    
+    document.getElementById('module' + moduleNumber).style.display = 'block';  
 }
