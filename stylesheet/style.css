@@ -14,11 +14,9 @@
 }
 html,
 body {
+  height: 100% !important;
   line-height: 1;
   background-color: var(--primary-color);
-  min-height: 100vh;
-  position: relative;
-  padding-top: 60px; 
 }
 
 .course-container {
@@ -36,7 +34,6 @@ body {
   border: black solid 3px;
   border-radius: 5px;
   text-align: center;
-  margin-bottom: 100px;
   
 }
 
@@ -133,6 +130,10 @@ h1 {
   margin-bottom: 1em;
 }
 
+.page-container {
+  min-height: calc(100vh - 82px);
+}
+
 #contact-container {
   display: flex;
   justify-content: center;
@@ -187,14 +188,11 @@ h1 {
   color: #fff;
   text-align: center;
   padding: 20px;
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
 
-.content {
-  padding-bottom: 60px; /* Ajuste conforme a altura do footer */
-}
 
 .contact-info {
   margin-top: 10px;
