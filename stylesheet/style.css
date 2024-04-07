@@ -257,3 +257,41 @@ h1 {
 #videos a:hover {
   color: #0056b3;
 }
+
+.imagem {
+  display: flex;
+}
+
+.img100 {
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+}
+
+.img101 {
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+}
+
+.img102 {
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+}
+
+.parágrafo {
+  margin: 20px;
+  margin-top: 50px;
+}
+span {
+  color: green;
+}
+
+.colorblue {
+  color: blue;
+}
+
+
+
+
