@@ -5,6 +5,7 @@
   --secondary-color: #ffffff;
   --tertiary-color: #000000;
   --quartenary-color: #010847;
+  --page-content-margin: 100px;
 }
 
 * {
@@ -14,7 +15,6 @@
 }
 html,
 body {
-  height: 100% !important;
   line-height: 1;
   background-color: var(--primary-color);
 }
@@ -118,9 +118,9 @@ ul > li > a {
   height: auto;
 }
 
-.teste {
-  margin: 100px auto;
-  width: 70%;
+.page-content {
+  margin: var(--page-content-margin) auto;
+  width: 45%;
   padding: 15px;
   display: flex;
   justify-content: center;
@@ -130,13 +130,13 @@ ul > li > a {
   background-color: var(--secondary-color);
 }
 
-.teste p,
+.page-content p,
 h1 {
   margin-bottom: 1em;
 }
 
 .page-container {
-  min-height: calc(100vh - 82px);
+  min-height: calc(100vh - 82px - var(--page-content-margin));
 }
 
 #contact-container {
