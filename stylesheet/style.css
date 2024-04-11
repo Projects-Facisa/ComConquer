@@ -334,23 +334,6 @@ span {
 .service-section:nth-child(4) {
   animation-delay: 3s;
 }
-.page-content {
-  opacity: 0;
-  animation: fadeInAnimation 1.5s ease-in forwards;
-}
-
-.page-content:nth-child(1) {
-  animation-delay: 0.5s;
-}
-
-.page-content:nth-child(2) {
-  animation-delay: 1s;
-}
-
-@keyframes fadeInAnimation {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
 
 @keyframes fadeInAnimation {
   from { opacity: 0; }
