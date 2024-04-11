@@ -275,12 +275,10 @@ img{
   background-color: #0056b3;
 }
 
-/* Estilos para o iframe do vídeo */
 #video-player {
-  display: none; /* Oculta o vídeo por padrão */
+  display: none; 
 }
 
-/* Estilos para o link "Voltar" */
 #videos a {
   display: block;
   margin-top: 20px;
@@ -309,7 +307,55 @@ span {
 .colorblue {
   color: blue;
 }
+.service-container{
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.service-title{
+  color: #0056b3;
+}
+.service-section {
+  margin-top: 20px;
+  opacity: 0;
+  animation: fadeInAnimation 1s ease-in forwards;
+}
 
+.service-section:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.service-section:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.service-section:nth-child(4) {
+  animation-delay: 3s;
+}
+.page-content {
+  opacity: 0;
+  animation: fadeInAnimation 1.5s ease-in forwards;
+}
+
+.page-content:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.page-content:nth-child(2) {
+  animation-delay: 1s;
+}
+
+@keyframes fadeInAnimation {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInAnimation {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 
 
 
