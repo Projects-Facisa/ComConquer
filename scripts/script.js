@@ -6,9 +6,10 @@ function playVideo(videoPath) {
 
 document.addEventListener('DOMContentLoaded', function() {
   const PageContentElement = document.querySelector('.page-content');
-  const pageContainer = document.querySelector('.page-container');
+  const PageContainer = document.querySelector('.page-container');
+  const PageTitle = document.querySelector('.page-title');
   
-  if (!PageContentElement) {
-      pageContainer.style.minHeight = 'calc(100vh - 82px)';
+  if (!PageContentElement && !PageTitle) {
+      PageContainer.style.minHeight = 'calc(100vh - 82px)';
   }
-  });
+});
