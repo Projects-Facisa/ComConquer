@@ -8,8 +8,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const PageContentElement = document.querySelector('.page-content');
   const PageContainer = document.querySelector('.page-container');
   const PageTitle = document.querySelector('.page-title');
+  const PageGrid = document.querySelector('.page-grid');
   
-  if (!PageContentElement && !PageTitle) {
+  if (!PageContentElement && !PageTitle && !PageGrid) {
       PageContainer.style.minHeight = 'calc(100vh - 82px)';
   }
 })

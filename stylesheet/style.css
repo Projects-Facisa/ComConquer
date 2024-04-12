@@ -145,6 +145,27 @@ ul > li > a {
   background-color: var(--secondary-color);
 }
 
+.page-grid:hover{
+  transform: translateY(25px);
+}
+
+.page-grid {
+  display: grid;
+  margin: var(--page-content-margin) auto 0;
+  width: 45%;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  background-color: var(--secondary-color);
+  position: relative;
+  transition: all 0.3s;
+  grid-template-columns: 50% 50%;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
 .page-container {
   min-height: calc(100vh - 82px - var(--page-content-margin));
 }
