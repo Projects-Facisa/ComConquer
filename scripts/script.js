@@ -12,4 +12,13 @@ document.addEventListener('DOMContentLoaded', function() {
   if (!PageContentElement && !PageTitle) {
       PageContainer.style.minHeight = 'calc(100vh - 82px)';
   }
-});
+})
+
+function clickMenu(){
+  if (itens.style.display == 'block'){
+    itens.style.display = 'none'
+  }
+  else{
+    itens.style.display = 'block'
+  }
+}

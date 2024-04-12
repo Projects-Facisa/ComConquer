@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
       rel="stylesheet"
     />
@@ -21,7 +25,29 @@
   </head>
   <body>
     <nav id="nav">
-      <ul>
+      <ul class="hamburger">
+        <li>
+          <a href="index.html">
+            <img
+              id="icon2"
+              src="../sources/ccicon.ico"
+              alt="icone da empresa 🤓"
+            />
+          </a>
+        </li>
+        <li>
+          <i class="material-icons" onclick="clickMenu()">menu</i>
+          <menu id="itens">
+            <ul>
+              <li><a href="servicos.html">Serviços</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="contato.html">Contato</a></li>
+              <li><a href="documentos.html">Documentos</a></li>
+            </ul>
+          </menu>
+        </li>
+        </ul>
+        <ul class="nav-item">
         <li>
           <a href="index.html">
             <img
@@ -47,7 +73,7 @@
           informática!
         </h1>
       </span>
-      <section class="course-container" >
+      <section class="course-container">
         <article class="course-plan">
           <p class="course-title">Módulo 1</p>
           <p class="course-title" id="course-desc">Vídeos 1 a 6</p>
@@ -69,9 +95,7 @@
       <p>&copy; 2024 ComConquer</p>
       <div class="contact-info">
         <a href="tel:+55123456789">Telefone: (12) 3456-7890</a>
-        <a href="mailto:contato@seudominio.com"
-          >Email: contato@comconquer.com</a
-        >
+        <a href="mailto:contato@seudominio.com">Email: contato@comconquer.com</a>
         <a href="https://wa.me/55123456789">WhatsApp: (12) 3456-7890</a>
       </div>
     </footer>

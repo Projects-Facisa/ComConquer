@@ -119,9 +119,18 @@ ul > li > a {
   font-style: italic;
 }
 
+.material-icons{
+  color: var(--secondary-color);
+}
+
 #icon2 {
   width: 30px;
   height: auto;
+}
+
+.page-content p {
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 .page-content {
@@ -141,7 +150,7 @@ ul > li > a {
 }
 
 .page-title{
-  margin: var(--page-content-margin) auto;
+  margin: var(--page-content-margin) auto 50px;
   width: 70%;
   padding: 15px;
   display: flex;
@@ -154,6 +163,10 @@ img{
   max-width: 400px;
 }
 
+table{
+  align-self: normal;
+}
+
 @media (max-width: 1024px) {
   .page-content {
     width: 70%;
@@ -164,6 +177,21 @@ img{
   #img-small{
     display: none;
   }
+  .page-title{
+    font-size: 25px;
+  }
+  
+}
+
+@media (min-width: 513px) {
+  .hamburger{
+    display: none;
+  }
+  
+  .material-icons{
+    display: none !important;
+    color: var(--secondary-color);
+  }
 }
 
 @media (max-width: 512px) {
@@ -172,6 +200,35 @@ img{
   }
   img{
     width: 60%;
+  }
+  .page-title{
+    font-size: 16px;
+  }
+  .nav-item{
+    display: none;
+  }
+  .hamburger{
+    display: block ;
+    text-align: center;
+  }
+  .material-icons{
+    display: block !important;
+    padding: 10px;
+  }
+  #itens{
+    display: none;
+  }
+  #nav{
+    position: relative;
+  }
+  ul{
+    display: block;
+  }
+  li{
+    padding: 5px;
+  }
+  .page-title{
+    margin-top: 50px;
   }
 }
 
@@ -313,6 +370,7 @@ span {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  margin: 50px auto var(--page-content-margin);
 }
 .service-title{
   color: #0056b3;
